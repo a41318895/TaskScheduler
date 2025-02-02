@@ -1,13 +1,13 @@
 package functionalInterface;
 
 /**
- * <b> InterruptedException handler Functional Interface </b>
+ * <b> InterruptedException supplier Functional Interface </b>
  *
  * @author Aki Chou
- * @date 2025/02/01
+ * @date 2025/02/02
  */
 @FunctionalInterface
-public interface InterruptedExceptionSupplier {
+public interface InterruptedExceptionSupplier<T> {
 
-    void apply() throws InterruptedException ;
+    T get() throws InterruptedException ;
 }

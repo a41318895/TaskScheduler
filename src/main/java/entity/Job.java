@@ -1,6 +1,7 @@
 package entity;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * <b> Job Entity Class </b>
@@ -9,6 +10,7 @@ import lombok.Data;
  * @date 2025/02/01
  */
 @Data
+@NoArgsConstructor(force = true)
 public class Job implements Comparable<Job> {
 
     private final Runnable task ;
